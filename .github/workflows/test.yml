@@ -1,0 +1,9 @@
+name: Build Test
+on: [push]
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - run: ls -la
+      - run: cat package.json
